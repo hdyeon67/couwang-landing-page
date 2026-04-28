@@ -1,8 +1,4 @@
-const links = {
-  googlePlay: "[GOOGLE_PLAY_URL]",
-  appStore: "[APP_STORE_URL]",
-  contact: "[CONTACT_URL]",
-};
+const CONTACT_URL = "#"; // TODO: Replace with a Kmong/Soomgo/Wishket link or mailto: address.
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
@@ -22,7 +18,7 @@ navToggle?.addEventListener("click", () => {
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const targetId = anchor.getAttribute("href");
-    const target = targetId ? document.querySelector(targetId) : null;
+    const target = targetId && targetId.length > 1 ? document.querySelector(targetId) : null;
 
     if (!target) {
       return;
@@ -52,14 +48,6 @@ document.querySelectorAll(".store-badge img").forEach((image) => {
   }
 });
 
-document.querySelectorAll('a[href="[GOOGLE_PLAY_URL]"]').forEach((link) => {
-  link.setAttribute("href", links.googlePlay);
-});
-
-document.querySelectorAll('a[href="[APP_STORE_URL]"]').forEach((link) => {
-  link.setAttribute("href", links.appStore);
-});
-
-document.querySelectorAll('a[href="[CONTACT_URL]"]').forEach((link) => {
-  link.setAttribute("href", links.contact);
+document.querySelectorAll("[data-contact-link]").forEach((link) => {
+  link.setAttribute("href", CONTACT_URL);
 });
