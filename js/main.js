@@ -1,5 +1,3 @@
-const CONTACT_URL = "#"; // TODO: Replace with a Kmong/Soomgo/Wishket link or mailto: address.
-
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -46,8 +44,4 @@ document.querySelectorAll(".store-badge img").forEach((image) => {
   if (image.complete && image.naturalWidth === 0) {
     showFallback();
   }
-});
-
-document.querySelectorAll("[data-contact-link]").forEach((link) => {
-  link.setAttribute("href", CONTACT_URL);
 });

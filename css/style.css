@@ -585,7 +585,9 @@ p {
 .cta__note {
   margin-top: 22px;
   margin-bottom: 0;
-  font-weight: 800;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .footer {

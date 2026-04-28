@@ -15,10 +15,11 @@
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hdyeon67.github.io/couwang-landing-page/">
-    <meta property="og:image" content="assets/og-image.png">
+    <meta property="og:image" content="https://hdyeon67.github.io/couwang-landing-page/assets/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#64CAFA">
-    <link rel="icon" href="assets/logo.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -36,9 +37,7 @@
       app-store-badge.png   : App Store badge
       google-play-badge.png : Google Play badge
       og-image.png          : social share image, 1200 x 630 recommended
-
-      Contact link
-      Replace CONTACT_URL in js/main.js when a final inquiry URL is ready.
+      favicon.png           : browser favicon and apple touch icon
     -->
 
     <header class="site-header">
@@ -60,7 +59,7 @@
           <li><a href="#features">기능</a></li>
           <li><a href="#screens">화면</a></li>
           <li><a href="#project">프로젝트</a></li>
-          <li><a href="#" data-contact-link>문의</a></li>
+          <li><a href="#contact">문의</a></li>
         </ul>
       </nav>
     </header>
@@ -324,18 +323,34 @@
         </div>
       </section>
 
-      <section class="cta section">
+      <section class="cta section" id="contact">
         <div class="container cta__box">
-          <p class="eyebrow">Portfolio Sample</p>
-          <h2>쿠왕처럼, 아이디어를 실제 서비스로 만들고 싶으신가요?</h2>
+          <p class="eyebrow">Contact</p>
+          <h2>쿠왕 문의와 브랜드 소식을 확인해보세요.</h2>
           <p>
-            쿠왕 프로젝트 경험을 바탕으로 앱/웹 아이디어를 개발 가능한 기획서, 랜딩페이지, Flutter 기반 Android/iOS MVP 앱으로 구체화하는 작업을 도와드릴 수 있습니다.
+            쿠왕 앱 사용 중 궁금한 점은 이메일로 남겨주세요. 브랜드 소식과 가벼운 피드백은 인스타그램에서도 확인할 수 있습니다.
           </p>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="#download">앱 다운로드하기</a>
-            <a class="btn btn--secondary" href="#" data-contact-link>작업 문의하기</a>
+            <a
+              class="btn btn--primary"
+              href="mailto:fineboll67@gmail.com?subject=%EC%BF%A0%EC%99%95%20%EC%95%B1%20%EB%AC%B8%EC%9D%98"
+              aria-label="쿠왕 앱 운영 문의 이메일 보내기"
+            >
+              앱 문의하기
+            </a>
+            <a
+              class="btn btn--secondary"
+              href="https://www.instagram.com/couwang.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="인스타그램에서 쿠왕 브랜드 소식 보기"
+            >
+              인스타그램에서 소식 보기
+            </a>
           </div>
-          <p class="cta__note">기획서 작성 · 랜딩페이지 제작 · Flutter MVP 앱 제작</p>
+          <p class="cta__note">
+            이 페이지는 실제 앱 프로젝트를 소개하는 반응형 랜딩페이지 포트폴리오로도 활용됩니다. 랜딩페이지 제작 문의는 이용 중인 플랫폼 메시지를 통해 남겨주세요.
+          </p>
         </div>
       </section>
     </main>
@@ -370,7 +385,20 @@
             <img src="assets/app-store-badge.png" alt="App Store에서 쿠왕 다운로드" loading="lazy">
             <span class="store-badge__fallback">App Store</span>
           </a>
-          <a class="footer__text-link" href="#" data-contact-link>문의하기</a>
+          <a
+            class="footer__text-link"
+            href="mailto:fineboll67@gmail.com?subject=%EC%BF%A0%EC%99%95%20%EC%95%B1%20%EB%AC%B8%EC%9D%98"
+          >
+            앱 문의
+          </a>
+          <a
+            class="footer__text-link"
+            href="https://www.instagram.com/couwang.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </div>
         <small>© Couwang Portfolio Landing Page</small>
       </div>
