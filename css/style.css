@@ -272,7 +272,7 @@ p {
 
 .store-badge--small {
   height: 40px;
-  min-width: 120px;
+  min-width: 135px;
 }
 
 .store-badge--small img {
@@ -586,6 +586,13 @@ p {
   margin-left: auto;
 }
 
+.cta__support {
+  margin-top: -8px;
+  margin-bottom: 22px;
+  color: #374151;
+  font-weight: 800;
+}
+
 .cta__note {
   margin-top: 22px;
   margin-bottom: 0;
@@ -740,8 +747,13 @@ p {
 
   .store-badge {
     justify-content: center;
+    min-width: 135px;
     border: 1px solid var(--color-line);
     background: var(--color-white);
+  }
+
+  .store-badge img {
+    max-width: 190px;
   }
 
   .hero__visual {
